@@ -12,7 +12,7 @@ const CreatePost = () => {
     const formData = new FormData(e.target);
 
     axios
-      .post("http://localhost:3000/api/post/create-post", formData)
+      .post("https://simple-backend-mhen.onrender.com/api/post/create-post", formData)
       .then((res) => {
         console.log(res);
         alert("Post is created Successfully");

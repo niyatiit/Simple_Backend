@@ -10,7 +10,7 @@ const Feed = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/post/fetch-all-post")
+      .get("https://simple-backend-mhen.onrender.com/api/post/fetch-all-post")
       .then((res) => {
         setPosts(res.data.post);
       })
